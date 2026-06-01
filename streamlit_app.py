@@ -22,7 +22,7 @@ st.write('The name on your smoothie will be: ',name_on_order)
  
 
 # Read table
-my_dataframe = session.table("SMOOTHIES.PUBLIC.FRUIT_OPTIONS").select(col('FRUIT_NAME'))
+my_dataframe = session.table("SMOOTHIES.PUBLIC.FRUIT_OPTIONS").select(col('FRUIT_NAME'),col('SEARCH_ON')
 
 pd_df=my_dataframe.to_pandas()
 st.dataframe(pd_df)
