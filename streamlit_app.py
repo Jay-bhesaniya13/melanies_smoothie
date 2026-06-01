@@ -4,7 +4,7 @@ from snowflake.snowpark.functions import col
 
 # Get Snowflake session
 cnx=st.connection('snowflake')
-session = cnx.session
+session = cnx.session()
 
 # App title
 st.title(':cup_with_straw: Customize Your Smoothie!')
